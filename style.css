@@ -2,12 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+body { 
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #dbdada;
   color: #333;
+
+
+  background-image: url('ruta-de-tu-imagen.jpg'); /* Reemplaza 'ruta-de-tu-imagen.jpg' por la ruta de tu imagen */
+  
+  /* Que ocupe toda la pantalla */
+  background-size: cover;
+  
+  /* Centrar la imagen */
+  background-position: center;
+  
+  /* Evitar que se repita */
+  background-repeat: no-repeat;
+  
+  /* Que la imagen de fondo se mantenga fija mientras se hace scroll */
+  background-attachment: fixed;
+  
+  /* Asegurar que el fondo ocupe toda la ventana */
+  min-height: 100vh; /* 100% de la altura de la ventana */
 }
 
 header {
@@ -104,6 +122,14 @@ p {
   transition: transform 0.3s ease;
 }
 
+.skills-gallery-js{
+  width: 140px;  /* Tamaño de los logos en la galería */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+
+
 .personal-skills-logo {
   width: 60%; /* Cambié de 700% a 70% */
   height: auto; /* Esto permite que la altura se ajuste de manera proporcional al ancho */
@@ -124,6 +150,7 @@ p {
   border-radius: 5px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
 footer {
   background-color: #333;
   color: white;
@@ -155,8 +182,7 @@ header img {
 }
 
 .img_sobremi{
-  width: 600px; /* Tamaño máximo de la imagen */
-  height: 600px;
+  width: 700px; /* Tamaño máximo de la imagen */
   border-radius: 60%; /* Borde circular */
   display: block; /* Para aplicar margen automático */
   margin: 0 auto; /* Centra la imagen horizontalmente */
@@ -197,3 +223,11 @@ header img {
 .line {
   display: none; /* Ocultar la línea decorativa */
 }
+
+.xarxes-principals {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;  /* Espacio entre la galería y la tabla */
+}
+

@@ -1,5 +1,6 @@
-  <!DOCTYPE html>
-  <html lang="es">
+<!DOCTYPE html>
+<html lang="es">
+
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,39 +10,114 @@
       <div class="navigation">
         <nav>
             <ul class="nav-type">
-                <li><a href="index.html" class="active">Inici</a></li>
+                <li><a href="sobreMi.html" class="active">Sobre mi</a></li>
                 <li><a href="habilidades.html" class="active2">Habilitats</a></li>
                 <li><a href="contactame.html" class="active3">Contacto</a></li>
             </ul>
-        </nav>
+        </nav> 
     </div>
   </head>
 
-  <body>
-        <header>
-            <img src="imatges/f.jpg" alt="Tu imagen">
-            <h1>Hola, soc Florian</h1>
-            <p>Desarrollador web i d'aplicacions multiplataforma</p>
-        </header>
 
-     
-  
-        <div class="container">
-            <section class="about-me">
-                <h2>Sobre mí</h2>
-                <p>Sóc un desenvolupador web apassionat per crear solucions innovadores i efectives. Amb experiència en HTML, CSS, JavaScript. El meu objectiu és combinar les meves habilitats tècniques amb el disseny centrat en lusuari.</p>
-                <p>En el meu temps lliure m'agrada llegir, en especial obres provinents del japo (mangues i noveles lleugeres), pero tambe si son d'algun altre origen. Jugar videojocs tambe es un pasatemps preferit, sobretot els que tinguin alguna cosa a veure amb el món del motor , ja que podria dir que es una de les 
-                passions que he tingut des de sempre.
-                </p>
-            </section>
+  <header>
+
+    <img src="imatges/f.jpg" alt="Tu imagen">
+      <h1>Habilitats</h1>
+      <p>Aqui parlare una mica sobre les meves habilitats i alguns dels meus projectes</p>
+  </header>
+
+ 
+  <div class="container">
+    <section class="skills">
+        <h2>Habilitats profesionals</h2>
+        <p>
+            En este apartat mostro los llenguatjes de programacio que coneixo i lo meu nivell en cadascun.
+        </p>
+        
+        <table class="skills-table">
+            <thead>
+                <tr>
+                    <th>Llenguatge</th>
+                    <th>Nivell</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Alt</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Alt</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Mitjà</td>
+                </tr>
+                <tr>
+                    <td>React</td>
+                    <td>Mitjà</td>
+                </tr>
+                <tr>
+                    <td>SQL per a base de dades</td>
+                    <td>Mitjà</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <div class="skills-gallery">
+        <div class="skills-gallery-js">
+            <img src="imatges/js.jpg" alt="JavaScript" class="skills-gallery-js">
+        </div>
+        <img src="imatges/html.jpg" alt="HTML" class="gallery-logo">
+        <img src="imatges/css.png" alt="CSS" class="gallery-logo">
+        <img src="imatges/react.png" alt="React" class="gallery-logo">
+        <img src="imatges/sql.png" alt="SQL" class="gallery-logo">
+    </div>
+
+    <section class="personal_skills">
+        <h2>Habilitats interpersonals</h2>
+        <ul class="skills-list">
+            <li><strong>Habilitats interpersonals destacades:</strong>
+                <ul>
+                    <li>Treball en equip</li>
+                    <li>Comunicació efectiva</li>
+                    <li>Resolució de problemes</li>
+                    <li>Gestió del temps</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="personal-skills-gallery">
+            <img src="imatges/habilitats-personals.jpg" alt="HTML" class="personal-skills-logo">
         </div>
 
-        <div class ="img_sobremi">
-            <img src="imatges/sobremi.jpg" alt="Tu imagen"> 
-        </div>
+      <section class="projects">
+          <h2>Projectes recents</h2>
+          <p>
+             Estos son alguns projectes aixi com alguns exercisis amb los llenguatges que coneixo.
+          </p>
+          <ul class="projects-list">
+              <li>
+                  <strong><a href="https://github.com/IESEBRE/mp3-uf3-projecte-fheius1">Projecte per afegir vehicles militars (Javascript)</a></strong>
+              </li>
+              <li>
+                 <strong><a href="https://github.com/IESEBRE/my-first-googleclassroom-task-fheius1">Problemes del jutge online JOEL</a></strong>
+               </li>
+              <li>
+                <strong><a href="https://github.com/IESEBRE/mp2-uf2-sql-select-fheius1">Consultes SQL senzilles</a></strong>
+              </li>
+              <li>
+                <strong><a href="https://github.com/IESEBRE/mp2-uf4-pts-postgresql-fheius1">SQL mes avançat</a></strong>
+              </li>
+          </ul>
+      </section>
+  </div>
 
-        <footer>
-            <p>&copy; 2024 Tots els drets reservats.</p>
-        </footer>
-  </body>
+  <footer>
+      <p>&copy; 2024 Tots els drets reservats.</p>
+      
+  </footer>
+
+</body>
+
 </html>
