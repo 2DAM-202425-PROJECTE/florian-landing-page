@@ -10,7 +10,7 @@ body {
   color: #333;
 
 
-  background-image: url('ruta-de-tu-imagen.jpg'); /* Reemplaza 'ruta-de-tu-imagen.jpg' por la ruta de tu imagen */
+  background-image: url('imatges/programing.jpg'); /* Reemplaza 'ruta-de-tu-imagen.jpg' por la ruta de tu imagen */
   
   /* Que ocupe toda la pantalla */
   background-size: cover;
@@ -29,27 +29,27 @@ body {
 }
 
 header {
-  background-color: #4CAF50;
+  background-color: #2a8a2db0;
   color: white;
   text-align: center;
-  padding: 60px 20px;
+  padding: 10px 10px;
 }
 
 
 header h1 {
-  font-size: 3rem;
+  font-size: 2.7rem;
   margin: 0;
 }
 
 header p {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   margin: 10px 0 0;
 }
 
 .container {
   flex: 1; /* Esto permite que el contenedor crezca y ocupe todo el espacio disponible */
   padding: 20px;
-  margin-left: 20%;
+  margin-left: 10%;
 }
 
 
@@ -63,6 +63,7 @@ h2 {
 }
 
 p {
+  color: #ffffff;
   font-size: 1.1rem;
   line-height: 1.7;
   margin-bottom: 20px;
@@ -79,19 +80,49 @@ p {
   margin-top: 20px;
 }
 
-.cta-button:hover {
-  background-color: #45a049;
+
+.lectures-recomanades {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;  /* Espacio entre la galería y la tabla */
 }
 
+
+.mangues {
+  width: 270px; /* Define el tamaño máximo que quieres para la imagen */
+  height: auto; /* Mantiene las proporciones correctas de la imagen */
+  object-fit: cover; /* Esto ayudará a que la imagen se ajuste bien dentro de su contenedor */
+  transform: scale(1.1)
+}
+
+
+.jocs-jugats {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las imágenes pasen a la siguiente fila */
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px; /* Espacio entre la galería y la tabla */
+}
+
+.jocs {
+  width: 300px; /* Ajusta el tamaño de las imágenes */
+  height: auto;
+  object-fit: cover;
+  margin: 10px; /* Espacio entre las imágenes */
+}
+
+
+
 .skills-list, .projects-list {
-  list-style: none;
+  list-style: none; 
   padding: 0;
 }
 
 .skills-table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .skills-table th, .skills-table td {
@@ -123,7 +154,7 @@ p {
 }
 
 .skills-gallery-js{
-  width: 140px;  /* Tamaño de los logos en la galería */
+  width: 215px;  /* Tamaño de los logos en la galería */
   height: auto;
   transition: transform 0.3s ease;
 }
@@ -178,12 +209,13 @@ header img {
   max-width: 150px; /* Tamaño máximo de la imagen */
   border-radius: 50%; /* Borde circular */
   display: block; /* Para aplicar margen automático */
-  margin: 0 auto; /* Centra la imagen horizontalmente */
+  margin: auto; /* Centra la imagen horizontalmente */
 }
 
-.img_sobremi{
+.desenvolupadorweb{
+  
+  margin-bottom: 20px;
   width: 700px; /* Tamaño máximo de la imagen */
-  border-radius: 60%; /* Borde circular */
   display: block; /* Para aplicar margen automático */
   margin: 0 auto; /* Centra la imagen horizontalmente */
 }
@@ -214,10 +246,16 @@ header img {
   font-size: 1.1rem;
   padding: 10px 15px;
   border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
+
+
 .navigation ul li a:hover {
-  background-color: #4CAF50;
+  background-color: #4b76eb;
+  padding: 8px 12px;  /* Ajusta el padding para hacerlo más pequeño */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Añade una sombra suave si lo deseas */
+  border-radius: 5px;
 }
 
 .line {
@@ -229,4 +267,46 @@ header img {
   justify-content: space-around;
   align-items: center;
   margin-bottom: 20px;  /* Espacio entre la galería y la tabla */
+}
+
+.xarxes-primaries {
+  width: 200px; /* Define el tamaño máximo que quieres para la imagen */
+  height: auto; /* Mantiene las proporciones correctas de la imagen */
+  object-fit: cover; /* Esto ayudará a que la imagen se ajuste bien dentro de su contenedor */
+  border-radius: 5%; /* Si quieres mantener un estilo circular */
+}
+
+
+
+.xarxes-secundaries {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px
+}
+
+.xarxes-noSeguides {
+  width: 200px; /* Define el tamaño máximo que quieres para la imagen */
+  height: auto; /* Mantiene las proporciones correctas de la imagen */
+  object-fit: cover; /* Esto ayudará a que la imagen se ajuste bien dentro de su contenedor */
+  border-radius: 5%; /* Si quieres mantener un estilo circular */
+  
+}
+
+/* Estilos para centrar el iframe */
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+  border-radius: 10px;  /* Opcional: bordes redondeados */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Opcional: sombra suave */
+}
+
+
+.form-iframe {
+  width: 100%;    /* Ancho del iframe */
+  height: 90%;   /* Altura del iframe */
+  border: none;    /* Quitar el borde */
 }
