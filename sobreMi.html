@@ -1,6 +1,6 @@
   <!DOCTYPE html>
   <html lang="es">
-  <head>
+  <head> 
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +9,10 @@
       <div class="navigation">
         <nav>
             <ul class="nav-type">
-                <li><a href="sobreMi.htmlñ" class="active">Sobre mi</a></li>
+                <li><a href="sobreMi.html" class="active">Sobre mi</a></li>
                 <li><a href="index.html" class="active2">Habilitats</a></li>
-                <li><a href="contactame.html" class="active3">Contacto</a></li>
+                <li><a href="negocis.html" class="active3">Servei</a></li>
+                <li><a href="contactame.html" class="active4">Contacto</a></li>
             </ul>
         </nav>
     </div>
@@ -19,6 +20,10 @@
  
   <body>
         <header>
+            <audio id="audioPlayer" controls autoplay>
+                <source src="canciones/cancion1.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
             <img src="imatges/f.jpg" alt="Tu imagen">
             <h1>Hola, soc Florian</h1>
             <p>Desarrollador web i d'aplicacions multiplataforma</p>
@@ -68,24 +73,21 @@
                  </div>
                 </p>
             </section>
-        <iframe width="560" height="315" 
-            src="https://www.youtube.com/embed/videoseries?list=PLprjp5fe5eTmGkEAyWvsuWGdxcWS_UNho&autoplay=1&controls=1&mute=1" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
-        </iframe>
-
-        <audio autoplay loop controls>
-            <source src="audio/musica-fondo.mp3" type="audio/mpeg">
-            Tu navegador no soporta la reproducción de audio.
-        </audio>
+        
+            <!-- <div class="iframe-container">
+                <iframe class="form-iframe" width="0" height="0" src="https://www.youtube.com/embed/videoseries?si=RDI7YtvF097sYy5l&amp;list=PLprjp5fe5eTmGkEAyWvsuWGdxcWS_UNho&autoplay=1" title="YouTube video player"
+                  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div> -->
         </div>
 
     
         <footer>
             <p>&copy; 2024 Tots els drets reservats.</p>
         </footer>
+
+        
+    <script src="main.js"></script>
+    
   </body>
 </html>

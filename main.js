@@ -24,3 +24,32 @@ document.querySelector('#app').innerHTML = `
 setupCounter(document.querySelector('#counter'))
 */
 
+// script.js
+
+const audioPlayer = document.getElementById('audioPlayer');
+const nowPlaying = document.getElementById('nowPlaying');
+
+// Lista de canciones
+const playlist = [
+    { title: "Canco1", file: "musica/InTheEndLinkinPark.mp3" },
+    { title: "Canco2", file: "musica/Numb(OfficialMusicVideo)LinkinPark.mp3" },
+    { title: "Canco3", file: "musica/BlackBettyDukesOfHazzard).mp3" }
+];
+
+let currentSongIndex = 0;
+
+// Función para cargar una canción
+function loadSong(index) {
+    audioPlayer.src = playlist[index].file;
+    nowPlaying.textContent = 'Reproduciendo: ' + playlist[index].title;
+    audioPlayer.play();
+}
+
+// Evento para pasar a la siguiente canción cuando termine la actual
+audioPlayer.addEventListener('ended', function() {
+    currentSongIndex = (currentSongIndex + 1) % playlist.length;
+    loadSong(currentSongIndex);
+});
+
+// Cargar la primera canción al inicio
+loadSong(currentSongIndex);

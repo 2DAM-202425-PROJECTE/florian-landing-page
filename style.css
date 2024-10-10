@@ -1,6 +1,6 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; 
 
 body { 
   font-family: 'Arial', sans-serif;
@@ -80,14 +80,12 @@ p {
   margin-top: 20px;
 }
 
-
 .lectures-recomanades {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 20px;  /* Espacio entre la galería y la tabla */
 }
-
 
 .mangues {
   width: 270px; /* Define el tamaño máximo que quieres para la imagen */
@@ -110,6 +108,10 @@ p {
   height: auto;
   object-fit: cover;
   margin: 10px; /* Espacio entre las imágenes */
+}
+
+.llista-serveis{
+  text: #2a51be;
 }
 
 
@@ -293,7 +295,7 @@ header img {
   
 }
 
-/* Estilos para centrar el iframe */
+
 .iframe-container {
   display: flex;
   justify-content: center;
