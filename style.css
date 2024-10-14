@@ -13,7 +13,7 @@ body {
   background-image: url('imatges/programing.jpg'); /* Reemplaza 'ruta-de-tu-imagen.jpg' por la ruta de tu imagen */
   
   /* Que ocupe toda la pantalla */
-  background-size: cover;
+  background-size: cover; 
   
   /* Centrar la imagen */
   background-position: center;
